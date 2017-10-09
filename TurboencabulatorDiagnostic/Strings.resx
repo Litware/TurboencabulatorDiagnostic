@@ -120,6 +120,18 @@
   <data name="ConnectionText" xml:space="preserve">
     <value>Turboencabulator connection status: </value>
   </data>
+  <data name="LineBreak" xml:space="preserve">
+    <value>==========</value>
+  </data>
+  <data name="MakeModel" xml:space="preserve">
+    <value>Please enter make/model of vehicle.</value>
+  </data>
+  <data name="NavigationInstructions" xml:space="preserve">
+    <value>Back to navigate back, quit to quit.</value>
+  </data>
+  <data name="NextAction" xml:space="preserve">
+    <value>Select next actions:</value>
+  </data>
   <data name="TitleText" xml:space="preserve">
     <value>Turboencabulator Diagnostic Tool</value>
   </data>

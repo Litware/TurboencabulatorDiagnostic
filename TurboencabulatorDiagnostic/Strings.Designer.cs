@@ -70,6 +70,42 @@ namespace TurboencabulatorDiagnostic {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ==========.
+        /// </summary>
+        internal static string LineBreak {
+            get {
+                return ResourceManager.GetString("LineBreak", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter make/model of vehicle..
+        /// </summary>
+        internal static string MakeModel {
+            get {
+                return ResourceManager.GetString("MakeModel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back to navigate back, quit to quit..
+        /// </summary>
+        internal static string NavigationInstructions {
+            get {
+                return ResourceManager.GetString("NavigationInstructions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select next actions:.
+        /// </summary>
+        internal static string NextAction {
+            get {
+                return ResourceManager.GetString("NextAction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Turboencabulator Diagnostic Tool.
         /// </summary>
         internal static string TitleText {

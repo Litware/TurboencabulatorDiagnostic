@@ -20,25 +20,25 @@ namespace TurboencabulatorDiagnostic
 
             string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             Console.WriteLine(Strings.VersionText + version);
-            Console.WriteLine("Back to navigate back, quit to quit.");
+            Console.WriteLine(Strings.NavigationInstructions);
 
-            Console.WriteLine("Please enter make/model of vehicle.");
+            Console.WriteLine(Strings.MakeModel);
             string makeModel = Console.ReadLine();
 
             bool continueDiag = true;
             do
             {
                 Console.WriteLine("");
-                Console.WriteLine("==========");
+                Console.WriteLine(Strings.LineBreak);
 
                 // run action of previous selection
                 if (root.action != null)
                 {
-                    Console.WriteLine("==========");
+                    Console.WriteLine(Strings.LineBreak);
                     root.action.Invoke();
 
                     Console.WriteLine("");
-                    Console.WriteLine("==========");
+                    Console.WriteLine(Strings.LineBreak);
                 }
 
                 // if current root has no children, go up a level
@@ -53,7 +53,7 @@ namespace TurboencabulatorDiagnostic
 
                 // read user choice and do it
                 Console.WriteLine("");
-                Console.Write("Select next actions: ");
+                Console.Write(Strings.NextAction);
                 string result = Console.ReadLine();
 
                 int optionSelected = root.children.FindIndex(x => x.text.Equals(result, StringComparison.CurrentCultureIgnoreCase));
